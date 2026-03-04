@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>El Fracaso — Revista literaria (2008–2016)</title>
+
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  background-color: #f8f6f2;
+  color: #111;
+  max-width: 1100px;
+  margin: 80px auto;
+  font-family: 'EB Garamond', serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-size: 56px;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+nav a {
+  margin-left: 25px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #444;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+}
+
+.issue-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.issue {
+  text-align: center;
+}
+
+.issue img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.issue-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.issue a {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0 5px;
+  color: black;
+}
+
+.issue a:hover {
+  text-decoration: underline;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 100px;
+  font-size: 15px;
+}
+
+footer {
+  margin-top: 60px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #777;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>El Fracaso</h1>
+    <div class="subtitle">Revista literaria chilena — 2008–2016</div>
+  </div>
+  <nav>
+    <a href="#">Sobre</a>
+    <a href="#">Números</a>
+    <a href="#">Equipo</a>
+    <a href="#">Contacto</a>
+  </nav>
+</header>
+
+<div class="main">
+
+  <div>
+    <h2>Sobre</h2>
+    <p>
+    El Fracaso fue una revista literaria chilena publicada entre 2008 y 2016.
+    Este archivo digital reúne sus ocho números completos en formato PDF.
+    </p>
+  </div>
+
+  <div>
+    <h2>Números</h2>
+
+    <div class="issue-grid">
+
+      <div class="issue">
+        <img src="portada1.jpg">
+        <div class="issue-title">N°1 — 2008</div>
+        <a href="n1.pdf">Leer</a>
+        <a href="n1.pdf" download>PDF</a>
+      </div>
+
+      <div class="issue">
+        <img src="portada2.jpg">
+        <div class="issue-title">N°2 — 2009</div>
+        <a href="n2.pdf">Leer</a>
+        <a href="n2.pdf" download>PDF</a>
+      </div>
+
+      <!-- Repite hasta N°8 -->
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer-grid">
+  <div>
+    <h3>Equipo</h3>
+    Dirección — Nombre<br>
+    Edición — Nombre<br>
+    Diseño — Nombre
+  </div>
+
+  <div>
+    <h3>Colaboradores</h3>
+    Autores, lectores y amigos de la revista.
+  </div>
+
+  <div>
+    <h3>Contacto</h3>
+    contacto@elfracaso.com<br>
+    Santiago de Chile
+  </div>
+</div>
+
+<footer>
+Archivo digital — 2008–2016
+</footer>
+
+</body>
+</html>
