@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
-</head>
-
 <style>
 
 body {
@@ -18,6 +16,7 @@ body {
   color: #111;
   max-width: 1100px;
   margin: 80px auto;
+  padding: 20px;
   font-family: 'EB Garamond', serif;
 }
 
@@ -59,12 +58,10 @@ nav a:hover {
   gap: 60px;
 }
 
-.issues {
+.issue-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 40px;
-  max-width: 1000px;
-  margin: auto;
 }
 
 .issue {
@@ -73,8 +70,10 @@ nav a:hover {
 
 .issue img {
   width: 100%;
+  max-width: 180px;
   height: auto;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
+  display: block;
 }
 
 .issue-title {
@@ -109,6 +108,26 @@ footer {
   color: #777;
 }
 
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+header {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main {
+  grid-template-columns: 1fr;
+}
+
+.footer-grid {
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+}
+
 </style>
 </head>
 
@@ -119,6 +138,7 @@ footer {
     <h1>El Fracaso</h1>
     <div class="subtitle">Revista de literatura, arte y periodismo — 2008–2016</div>
   </div>
+
   <nav>
     <a href="#">Sobre</a>
     <a href="#">Números</a>
@@ -129,71 +149,74 @@ footer {
 
 <div class="main">
 
-  <div>
-    <h2>Sobre</h2>
-    <p>
-    El Fracaso fue una revista de literatura, arte y periodismo chilena publicada entre 2008 y 2016 desde la ciudad de Valparaíso.
-    Este archivo digital reúne sus ocho números completos en formato PDF.
-    </p>
-  </div>
+<div>
+<h2>Sobre</h2>
+<p>
+El Fracaso fue una revista de literatura, arte y periodismo chilena publicada entre 2008 y 2016 desde Valparaíso.
+Este archivo digital reúne sus números completos en formato PDF.
+</p>
+</div>
 
-  <div>
-    <h2>Números</h2>
+<div>
 
-    <div class="issue-grid">
+<h2>Números</h2>
 
-      <div class="issue">
-        <img src="PortadaEF8.jpg">
-        <div class="issue-title">N°8 — 2016</div>
-        <a href="elfracaso8.pdf">Leer</a>
-        <a href="elfracaso8.pdf" download>PDF</a>
+<div class="issue-grid">
 
-      </div>
+<div class="issue">
+<img src="PortadaEF8.jpg">
+<div class="issue-title">N°8 — 2016</div>
+<a href="elfracaso8.pdf">Leer</a>
+<a href="elfracaso8.pdf" download>PDF</a>
+</div>
 
-      <div class="issue">
-        <img src="PortadaEF7.jpg">
-        <div class="issue-title">N°7 — 2015</div>
-        <a href="elfracaso7.pdf">Leer</a>
-        <a href="elfracaso7.pdf" download>PDF</a>
-      </div>
+<div class="issue">
+<img src="PortadaEF7.jpg">
+<div class="issue-title">N°7 — 2015</div>
+<a href="elfracaso7.pdf">Leer</a>
+<a href="elfracaso7.pdf" download>PDF</a>
+</div>
 
-       <div class="issue">
-        <img src="PortadaEF6.jpg">
-        <div class="issue-title">N°6 — 2014</div>
-        <a href="elfracaso6.pdf">Leer</a>
-        <a href="elfracaso6.pdf" download>PDF</a>
-      </div>
+<div class="issue">
+<img src="PortadaEF6.jpg">
+<div class="issue-title">N°6 — 2014</div>
+<a href="elfracaso6.pdf">Leer</a>
+<a href="elfracaso6.pdf" download>PDF</a>
+</div>
 
-       <div class="issue">
-        <img src="PortadaEF5.jpg">
-        <div class="issue-title">N°5 — 2010</div>
-        <a href="elfracaso5.pdf">Leer</a>
-        <a href="elfracaso5.pdf" download>PDF</a>
-    </div>
+<div class="issue">
+<img src="PortadaEF5.jpg">
+<div class="issue-title">N°5 — 2010</div>
+<a href="elfracaso5.pdf">Leer</a>
+<a href="elfracaso5.pdf" download>PDF</a>
+</div>
 
-  </div>
+</div>
+</div>
 
 </div>
 
 <div class="footer-grid">
-  <div>
-    <h3>Comité Editorial</h3>
-    Sergio Sepúlveda<br>
-    Hugo Espinoza<br>
-    Miguelángel Sánchez<br>
-    Diseño — Andrés Tapia
-  </div>
 
-  <div>
-    <h3>Colaboradores</h3>
-    Pronto el listado de amigas y amigos que hicieron de esta revista una resaca bella y soportable.
-  </div>
+<div>
+<h3>Comité Editorial</h3>
+Sergio Sepúlveda<br>
+Hugo Espinoza<br>
+Miguelángel Sánchez<br>
+Diseño — Andrés Tapia
+</div>
 
-  <div>
-    <h3>Contacto</h3>
-    contacto@elfracaso.com<br>
-    Valparaíso
-  </div>
+<div>
+<h3>Colaboradores</h3>
+Pronto el listado de quienes hicieron de esta revista una resaca bella y soportable.
+</div>
+
+<div>
+<h3>Contacto</h3>
+contacto@elfracaso.com<br>
+Valparaíso
+</div>
+
 </div>
 
 <footer>
