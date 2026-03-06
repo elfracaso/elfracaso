@@ -59,10 +59,12 @@ nav a:hover {
   gap: 60px;
 }
 
-.issue-grid {
+.issues {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .issue {
@@ -145,6 +147,15 @@ footer {
         <div class="issue-title">N°8 — 2016</div>
         <a href="elfracaso8.pdf">Leer</a>
         <a href="elfracaso8.pdf" download>PDF</a>
+  .issue img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.issue {
+  text-align: center;
+}
       </div>
 
       <div class="issue">
